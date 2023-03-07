@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+html{
+    font-size: 10px;
+    font-family: 'Montserrat' sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    min-height: 100vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    color: #97DECE;
+}
+
+.container a{
+    display: inline-block;
+    padding: 10px 30px;
+    color: aqua;
+    background-color: transparent;
+    border: 2px solid aqua;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+
+}
+.search button{
+    border: transparent;
+    border-radius: 0%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #97DECE;
+    margin-top: 1px;
+    font-size: clamp(0.1875rem, -5.4375rem + 18vw, 4.6875rem);
+}
+.hero .nav-links h1{
+    color: #97DECE;
+}
+.nav-links h1{
+    display: flex;
+    color: #97DECE;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.nav li{
+    color: #97DECE;
+}
+a{
+    cursor: pointer;
+}
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+    margin-top: 0px;
+    font-size: clamp(0.1875rem, -5.4375rem + 18vw, 4.6875rem);
+}
+.nav-links h1{
+    margin-top: 200px;
+    color: black
+}
+.nav-links ul li a {
+    text-decoration: none;
+    color: #97DECE;
+    margin: 0 14px;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+.main-paige{
+    padding: 20px;
+}
+.row h1 {
+    margin-top: 1px;;
+}
+.text h1{
+    margin-top: 110px;
+}
+.container {
+    margin-top: 100px;
+}
+.row{
+    display: flex;
+}
+.skills{
+    display: flex;
+}
+.skills p{
+    margin: 20px 10px;
+}
+.skills svg{
+    margin: 20px 10px;
+    width: 50px;
+    cursor: pointer;
+}
+.search{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+input.srch{
+    color: whitesmoke;
+    background-color: transparent;
+    height: 48px;
+    margin-top: 33px;
+    font-size: x-large;
+    width: 250px;
+    height: 55px;
+}
+button.btn:hover{
+    background-color: transparent;
+    color: transparent;
+    border-radius: transparent;
+}
+button.btn{
+    color: white;
+    background-color: transparent;
+    font-size: larger;
+}
+.fb-buttom a{
+    display: flex;
+    justify-content: baseline;
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url(./317595137_2074475196070590_5645899671468009354_n.jpg);
+    background-position: top center;
+    position: relative;
+    z-index: 8;
+    width: 100%;
+}
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
+}
+#hero-buttom{
+    color: black;
+}
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    font-size: clamp(0.1875rem, -5.4375rem + 18vw, 4.6875rem);
+    justify-content: flex-start;
+}
+#hero h1 {
+    display: block;
+    width: fit-content;
+    position: relative;
+    max-width: 1200px;
+    font-size: clamp(0.1875rem, -5.4375rem + 18vw, 4.6875rem);
+    color: transparent;
+    animation: text_reveal 1s ease forwards;
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(1){
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(2){
+    animation-delay: 2.5s;
+}
+#hero h1:nth-child(3){
+    animation: text_reveal_name .5s ease forwards;
+    animation-delay: 3.5s;
+}
+#hero span{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 0%;
+   background-color: aqua; 
+   animation: text_reveal_box 1s ease;
+   animation-delay: 1s;
+}
+#hero h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay: 3s;
+}
+#hero .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: clamp(1.25rem, -3.0469rem + 13.75vw, 4.6875rem);
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+#hero .btn:hover{
+    color: white;
+    background-color: aqua;
+}
+#hero .search{
+    float: left;
+    width: 45px;
+    height: 30px;
+    margin-right: 500px;
+    margin-bottom: 450px;
+    background-color: transparent;
+}
+/* End Hero Section */
+
+/* Home Section */
+#home{}
+#home .home{
+    flex-direction: column;
+    text-align: center;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: aqua;
+}
+#home .home-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    text-align: center;
+}
+#home .home-item h2{
+    color: black;
+}
+#home .home-buttom h1{
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#home .home-title span{
+    color: crimson;
+}
+#home .home-top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: black;
+}
+#home .home-top h2{
+    color: black;
+}
+#home .home-buttom p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: black;
+}
+#home .home-buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+    background-color: #97DECE;
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 100px;
+    background-size: cover;
+}
+#home .home-buttom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#home .home-buttom .icon img {
+    margin-left: 400px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+#home .home-buttom:hover{
+    flex: 2;
+    background-color: aqua;
+    color: black;
+}
+
+/* End Home Section*/
+
+/* Services Section */
+#services{}
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: aquamarine;
+}
+#services .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    text-align: center;
+}
+#services .section-title span{
+    color: crimson;
+}
+#services .service-top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+#services .service-buttom p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: black;
+}
+#services .service-buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 100px;
+    background-size: cover;
+}
+#services .service-item h1{
+    color: black;
+}
+#service .service-buttom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#service .service-buttom .icon img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+/* End Services Section*/
+
+/* About Section */
+#about{}
+#about .about{
+    flex-direction: column;
+    text-align: center;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: darkcyan;
+}
+#about .about-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    text-align: center;
+}
+#about .about-title span{
+    color: crimson;
+}
+#about .about-title h1{
+    font-size: 4rem;
+    font-weight: 300px;
+    color: black;
+}
+#about .about-top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+#about .about-buttom p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: white;
+}
+#about .about-buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 100px;
+    background-size: cover;
+}
+#about .about-item h1{
+    color: black;
+}
+#about .about-buttom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#about .about-buttom .icon img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+/* End About Section*/
+
+/* Contact Section */
+#contact{}
+#contact .contact{
+    flex-direction: column;
+    text-align: center;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: aqua;
+}
+#contact .contact-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    text-align: center;
+}
+#contact .contact-title span{
+    color: crimson;
+}
+#contact .contact-title h1{
+    font-size: 4rem;
+    font-weight: 300px;
+    color: black;
+}
+#contact .contact-top p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+#contact .contact-buttom p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: black;
+}
+#contact .contact-buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 100px;
+    background-size: cover;
+    color: black;
+}
+#contact .contact-buttom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#contact .contact-item h1{
+    color: black;
+}
+#contact .contact-buttom .icon img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+/* End Contact Section*/
+
+/* Card Section */
+#card{}
+#card .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-left: 50px
+}
+.card{
+    border-radius: 20px;
+    margin: 10px;
+    height: 200px;
+    background-color: #fff;
+    flex: 1;
+    transition: .3s all ease;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+}
+
+.card:hover{
+    flex: 2;
+    background-color: aqua;
+    color: black;
+}
+.card h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+/* End Card Section */
+
+.fb{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    background-color: aqua;
+}
+.fb img{
+    height: 300px;
+    margin-top: 10px;
+    width: 350px;
+    height: 480px;
+}
+.fb-middle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 50px;
+    color: black;
+}
+.fb-buttom{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: black;
+}
+
+/* Keyframes */
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+@keyframes text_reveal_name{
+    100%{
+        color: aqua;
+        font-weight: 500;
+    }
+}
+/* End Keyframes */
